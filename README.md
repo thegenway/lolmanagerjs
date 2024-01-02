@@ -1,4 +1,7 @@
 # lolmanagerjs
+
+### 在全面屏手机上会导致定位不准确，建议使用在1080*1920的屏幕上使用，或者在pc端使用安卓模拟器
+
 AutoX.js手游英雄联盟电竞经理自动做任务脚本
 > 运行脚本依赖项目：[AutoX.js](https://github.com/kkevsekk1/AutoX)
 
