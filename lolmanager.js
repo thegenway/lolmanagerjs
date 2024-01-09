@@ -282,6 +282,7 @@ if(todoFlag.lianmeng) {
         if("一键全赞" === ocrCaptureScreen(1708, 159, 1825, 192)) {
             console.log("点击【一键全赞】")
             click(1768, 173)
+            closeBlankToCloseDialog();
         } else {
             console.verbose("没有找到【一键全赞】，点赞任务跳过");
         }
@@ -510,7 +511,7 @@ if(todoFlag.julebu_yingxiongfenxi) {
                 sleep(1000)
                 var text = ocrCaptureScreen(xArr[i][0], y1, xArr[i][1], y2);
                 console.log("第" + (i + 1) + "个：" + text)
-                if(text && text.indexOf("报告") >= 0) {
+                if(text && (text.indexOf("报") >= 0 || text.indexOf("告") >= 0)) {
                     click(xArr[i][0], y1); //点击一个卡片
                     sleep(1000)
                     click(627, 938); //点击右下角黄色按钮
